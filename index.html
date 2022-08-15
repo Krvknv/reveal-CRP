@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>Critical Rendering Path</section>
+        <section>
+          CRP (Critical Rendering Path) - the sequence of these steps required
+          to render the page for the first time
+        </section>
+        <section>
+          <ul>
+            <li>DOM</li>
+            <li>CSSOM</li>
+            <li>Running JavaScript</li>
+            <li>Render tree</li>
+            <li>Layout</li>
+            <li>Paint</li>
+          </ul>
+        </section>
+        <section>DOM <br /><img src="./img/dom.PNG" alt="" /></section>
+        <section>CSSOM <br /><img src="./img/cssom.PNG" alt="" /></section>
+        <section>
+          Running JavaScript <br /><img src="./img/js.jpg" alt="" />
+        </section>
+        <section>
+          Render Tree <br /><img src="./img/render-tree.PNG" alt="" />
+        </section>
+        <section>Layout <br /><img src="./img/layout.png" alt="" /></section>
+        <section>Paint <br /><img src="./img/paint.jpeg" alt="" /></section>
+        <section>Thank you for your attention</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
